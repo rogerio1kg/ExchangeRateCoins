@@ -41,6 +41,14 @@ Instale as dependências do Gson para converter o Json da API
 
 Verifique sua chave API_KEY no código
 
+## Stack utilizada
+
+**Editor de Código:** IntelliJ IDEA Community Edition 2024.1 e Visual Studio Code
+
+**Java:** JDK 17
+
+**API:** Exchange Rate API
+
 
 ## Licença
 
