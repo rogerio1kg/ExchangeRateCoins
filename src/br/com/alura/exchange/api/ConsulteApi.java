@@ -1,6 +1,6 @@
 package br.com.alura.exchange.api;
 
-import br.com.alura.exchange.converter.Coin;
+import br.com.alura.exchange.controller.Coin;
 import com.google.gson.Gson;
 
 import java.net.URI;
@@ -9,7 +9,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 
-public class ConsultCoins {
+public class ConsulteApi {
     private static final String apiKey = "84c45697ba6f7abc104145d3";
     public Coin searchCoin(String coinBase, String coinConverter, double resultConverter) {
 

@@ -1,7 +1,7 @@
 package br.com.alura.exchange;
 
-import br.com.alura.exchange.converter.ConverterExchangeCoins;
-import br.com.alura.exchange.menu.MenuInter;
+import br.com.alura.exchange.controller.ExchangeValue;
+import br.com.alura.exchange.menu.MenuInteractive;
 import br.com.alura.exchange.menu.MenuInterface;
 
 import java.util.Scanner;
@@ -14,9 +14,9 @@ public class Main {
 
         try {
             while (option != 7) {
-                ConverterExchangeCoins converter = new ConverterExchangeCoins();
+                ExchangeValue converter = new ExchangeValue();
                 MenuInterface show = new MenuInterface();
-                MenuInter inter = new MenuInter();
+                MenuInteractive inter = new MenuInteractive();
                 show.showInterface();
 
                 option = scanner.nextInt();

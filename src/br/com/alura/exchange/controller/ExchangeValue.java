@@ -1,8 +1,8 @@
-package br.com.alura.exchange.converter;
+package br.com.alura.exchange.controller;
 
-import br.com.alura.exchange.api.ConsultCoins;
+import br.com.alura.exchange.api.ConsulteApi;
 
-public class ConverterExchangeCoins {
+public class ExchangeValue {
     private double baseToConverter;
     private String coinBase;
     private String coinConverter;
@@ -17,7 +17,7 @@ public class ConverterExchangeCoins {
         this.coinBaseExchange = cbex;
 
 
-        ConsultCoins converter = new ConsultCoins();
+        ConsulteApi converter = new ConsulteApi();
         Coin newCoin = converter.searchCoin(coinBase, coinConverter, baseToConverter);
         double valueConverter = newCoin.conversion_rate() * this.baseToConverter;
 
