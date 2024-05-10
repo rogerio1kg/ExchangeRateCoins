@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 
 
 public class ConsulteApi {
-    private static final String apiKey = "84c45697ba6f7abc104145d3";
+    private static final String apiKey = "API_KEY"; //informe sua chave API aqui
     public Coin searchCoin(String coinBase, String coinConverter, double resultConverter) {
 
         URI endpoint = URI.create("https://v6.exchangerate-api.com/v6/"+ apiKey + "/pair/" + coinBase + "/" + coinConverter + "/" + resultConverter);
